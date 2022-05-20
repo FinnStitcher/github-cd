@@ -1,12 +1,18 @@
 .my-custom-class {
-    /* RIGHT In here is where we put out CSS properties */
+    /* RIGHT In between the {} of each selector is where we put our CSS properties */
     color:bisque;
     background-color: black;
     font-size: large;
     padding: 20px;
+    margin: 20px;
+    border: solid 20px lightgreen
 }
 
 #my-custom-id {
+    /* 
+    There are many properties, so refer to the resources to find what you're looking for.
+    VSCode is nice enough to try and help out with showing some of the options you have avaliable to you
+    */
     color:darkblue;
     background-color: lightcoral;
     font-size:x-large;
