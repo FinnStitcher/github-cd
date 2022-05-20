@@ -16,7 +16,22 @@ Syntax for creating a CSS ID Selector
 }
 
 /* 
-In any case, these names need to match the names given to the HTML Attributes tied to the HTML elements in the
+The names given for each Class and ID Selector need to match the names given to the HTML Attributes tied to the HTML elements in the
 HTML file. If the names are not matching verbatim, then the stylngs will not work.
+
+====================================================================================
+
+The difference between ID and CLASS selectors
+---------------------------------------------------------
+1. ID's are only meant to be used for one HTML Element. 
+2. It's bad practice to have more than one ID with the exact same name. 
+   It is also bad practice to have more than one ID that have relatively the same name.
+3. ID's are considered higher priority than a CLASS. So when an ID and CLASS selector are used on the same HTML
+   element, then if the ID and the CLASS contains the same stylin-indicators(properties), the ID's properties will
+   override the CLASS's properties
+4. Classes are meant to be widely used in comparison to ID's. Therefore many HTML elements can have the same CLASS Selector
+
+
+====================================================================================
 */
 
