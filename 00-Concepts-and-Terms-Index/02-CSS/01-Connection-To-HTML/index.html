@@ -1,0 +1,42 @@
+<!-- 
+    CSS and HTML are two different programming languages, but have come to be able to work
+    together nicely.
+
+    But in order for them to work together, we need to establish a link.
+    This link is always established in the <head> tag of the HTML because the <head> tag is
+        meant to hold data/info for the HTML that won't necessarily become visible to the user
+        that's on the website.
+
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- 
+        Establishing the connection to ONE CSS stylesheet.
+        There needs to be a minimum of two attributes 
+        1. rel 
+            - short for relationship
+        2. href
+            - Essentially a URL or a path. This URL/path can point to somewhere on the internet or
+            to a location somewhere on your computer.
+            - In this case we are pointing to somewhere on your local machine.
+            - The ""(Double Quotes) are important because this is how HTML understands what we think as written text.
+            In Coding terms, there are labeled as ** Strings ** 
+            - The reason we start out our String with "./" is because this is the industry standard to say we are starting
+            our path search in the folder that we are currently in. Then finally we need the name of the CSS file to finally link it.
+        3. Once linked, we can start applying styles to our HTML elements(tags) with CSS Selectors
+
+
+    -->
+    <link rel="stylesheet" href="./index.css"/>
+</head>
+<body>
+    
+</body>
+</html>
