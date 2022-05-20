@@ -1,0 +1,22 @@
+/* 
+Syntax for creating a CSS Class Selector
+    - Use the Period(.) along with the name that you want to give that Class Selector followed by one set of {}
+*/
+
+.this-Is-A-Class-Selector {
+
+}
+
+/* 
+Syntax for creating a CSS ID Selector
+    - Use the Hashtag(#) along with the name that you want to give that Class Selector followed by one set of {}
+*/
+#this-Is-An-ID-Selector {
+
+}
+
+/* 
+In any case, these names need to match the names given to the HTML Attributes tied to the HTML elements in the
+HTML file. If the names are not matching verbatim, then the stylngs will not work.
+*/
+
