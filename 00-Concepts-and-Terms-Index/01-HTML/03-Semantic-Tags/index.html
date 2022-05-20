@@ -1,6 +1,15 @@
 <!-- 
-Semantic Tags for now can be thought of as functionally the same as basic tags but with more aloof titles
 
+Semantic Tags for now can be thought of as functionally the same as basic HTML tags 
+but with a fancier title(name). The difference is essentially just the name, everything
+else about a semantic tag is identical to a basic tag
+
+The biggest reason that semantics continue to be developed is because of quick readability
+from dev to devs and because it is now an accessibility requirement established in other countries
+like the UK and Europe.
+  - So if you're website does not meet their accessibility standards, your website/company is subject
+  to the fines or punishment that comes with not having met those standards if any of your client base
+  is located in those countries.
  -->
 
 <!DOCTYPE html>
@@ -11,5 +20,30 @@ Semantic Tags for now can be thought of as functionally the same as basic tags b
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <!-- General semantic versions of a <div></div> -->
+    <article></article>
+      <aside></aside>
+      <details></details>
+      <footer></footer>
+      <header></header>
+      <main></main>
+      <nav></nav>
+      <section></section>
+      <summary></summary>
+
+      <!-- General semantic Versions of a <div></div> but meant to be used for images -->
+      <figure></figure>
+      <figcaption></figcaption>
+
+      <!-- General semantic versons of a <span> that has some inherent styling -->
+      <mark></mark>
+      <time></time>
+  </body>
 </html>
+
+<!-- 
+  External links for more research
+  https://developer.mozilla.org/en-US/docs/Glossary/Semantics
+
+ -->
