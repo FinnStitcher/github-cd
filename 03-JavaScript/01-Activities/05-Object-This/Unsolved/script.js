@@ -1,5 +1,5 @@
 // TODO: What is `this` referring to here?
-console.log(this);
+// console.log(this);
 
 // TODO: What is `this` referring to here?
 function helloThis() {
@@ -26,3 +26,4 @@ var investor = {
 };
 
 // TODO: Call the `helloThis` function and the object methods to check results in the console
+
