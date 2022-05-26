@@ -1,3 +1,14 @@
+/* 
+    Before getting into variables. We're going to talk about the console.log()
+    For now, take is a magical command that outputs whatever you put into it. I suggest that you
+    console.log() a lot of the variables, methods, and functions that you create as you read these pieces
+
+    Examples.
+*/
+
+console.log("test");
+console.log(1)
+
 /*
     These series of folders and files are meant to help you understand 
     the fundamentals of Javascript
