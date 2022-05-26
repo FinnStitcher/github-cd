@@ -17,6 +17,7 @@ h1El.textContent = "Welcome to my page";
 kittenEl.textContent = "This is my kitten 🐱.";
 nameEl.textContent = "His name is Jax.";
 favoriteEl.textContent = "My favorite foods are:";
+li1.textContent = "Pizza";
 
 body.appendChild(h1El);
 body.appendChild(infoEl);
@@ -26,6 +27,7 @@ infoEl.appendChild(nameEl);
 body.appendChild(favoriteEl);
 favoriteEl.appendChild(listEl);
 // Append ordered list 
+listEl.append(li1);
 favoriteEl.appendChild(listEl);
 
 h1El.setAttribute("style", "margin:auto; width:50%; text-align:center;");
