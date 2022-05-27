@@ -74,3 +74,9 @@ var teachAssistant = true;
         3. carHonda
         4. pinkIphone
 */
+
+/*
+    When you want to use or reuse a variable, always reference the variable by the name that you gave it
+    
+    Variables store data, so refer to it later in your code
+*/
