@@ -7,6 +7,7 @@ var signUpButton = document.querySelector("#sign-up");
 signUpButton.addEventListener("click", function(event) {
   event.preventDefault();
   
+  // create user object from submission
   var user = {
     firstName: firstNameInput.value.trim(),
     lastName: lastNameInput.value.trim(),
@@ -16,4 +17,5 @@ signUpButton.addEventListener("click", function(event) {
 
   // set new submission to local storage 
   localStorage.setItem("user", JSON.stringify(user));
+  
 });
