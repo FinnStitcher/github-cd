@@ -1,0 +1,133 @@
+<!-- 
+============================================================================================
+
+Lots of things will be annoyingly spaced out just so that concepts can be seperated nicely 
+This aims to combine everything up to this point including HTML and CSS
+
+This will also include other niche things that aren't covered in detail in these notes because 
+it would be too long to explicitly type everything out when there are many resources already 
+out there that dives into them.
+
+-----------
+
+This app is going to be a calculator app
+
+============================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+
+    <!-- Links to the CSS -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+
+  <body>
+    <!-- 
+        Main semantic tag b/c this is the main portion of the app 
+        More reading
+            - https://developer.mozilla.org/en-US/docs/Web/HTML/Element#content_sectioning
+            - https://www.w3schools.com/html/html5_semantic_elements.asp
+    -->
+    <main id="calculator">
+      <!-- This will dynamically be populated with whatever values from the buttons we are presssing -->
+      <section id="display">Click a Button</section>
+
+      <section class="buttonContainer">
+        <!-- The reason these are set up this way is because of how CSS Grid will allocate their spacing -->
+        <button class="btn numBtn">1</button>
+        <button class="btn numBtn">2</button>
+        <button class="btn numBtn">3</button>
+        <button id="plus" class="btn operation">+</button>
+
+        <button class="btn numBtn">4</button>
+        <button class="btn numBtn">5</button>
+        <button class="btn numBtn">6</button>
+        <button id="sub" class="btn operation">-</button>
+
+        <button class="btn numBtn">7</button>
+        <button class="btn numBtn">8</button>
+        <button class="btn numBtn">9</button>
+        <button id="multi" class="btn operation">*</button>
+
+        <button class="btn numBtn">0</button>
+        <button class="btn equals">=</button>
+        <button class="btn clear">clr</button>
+        <button id="divide" class="btn operation">•/•</button>
+      </section>
+    </main>
+
+    <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+    <!-- 
+        This will be dynmically populated by our JS
+        It will hold the output of the calculator
+
+        It will also hold the previous outcomes that are clickable
+    -->
+    <aside id="resultsContainer">
+      <!-- most recent -->
+      <section id="result">
+        <h1 class="info">Results</h1>
+        <button>choose</button>
+      </section>
+
+      <!-- output history -->
+      <section id="history"></section>
+    </aside>
+
+    <!-- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    -->
+
+    <!-- I have three script tags here to demonstrate the levels of logic included -->
+
+    <!-- This one does not include the interactive history concept -->
+    <!-- <script src="./levelOne.js"></script> -->
+
+    <!-- includes the INteractive results history -->
+    <script src="./levelTwo.js"></script>
+  </body>
+</html>
