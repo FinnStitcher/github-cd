@@ -12,20 +12,18 @@
 </head>
 
 <body>
-
-  <!-- TODO: Add classes to use sizing properties to make this <div> the full height of viewport, apply a dark background, use flex properties to center align content on the page -->
-  <div class="vh-100 bg-dark d-flex justify-content-center">
-
-    <!-- TODO: Add classes to use sizing properties to make this row run the full width of the page and use flex properties to center justify content -->
-    <section class="row vw-100 d-flex justify-content-center">
+  <!-- Center vertically by setting width equal to page width and make it flexbox -->
+  <!-- Center horizontally by setting height equal to page height -->
+  <div class="min-vh-100 d-flex align-items-center bg-dark">
+    <!-- Change the alignment of flex item to center with justify-content-center -->
+    <section class="w-100 row justify-content-center">
 
       <div class="col-10 col-md-6 col-lg-5">
-
-        <!-- TODO: Add classes to center this text and make it white -->
-        <h1 class="display-3 d-flex justify-content-center text-white">Sign Up!</h1>
-
-        <!-- TODO: Add classes to apply a white background, rounded corners, padding, and margin on the y-axis (top and bottom) -->
-        <form class="bg-white rounded p-3 m-3">
+        <!-- Bootstrap preset color classes for backgrounds and text -->
+        <h1 class="display-3 text-center text-white">Sign Up!</h1>
+        <!-- Use p - for classes that set padding -->
+        <!-- Use m - for classes that set margin -->
+        <form class="bg-white my-4 p-4 rounded">
           <h3>Fill out the form and get started!</h3>
           <div class="form-group">
             <label for="username">Username</label>
