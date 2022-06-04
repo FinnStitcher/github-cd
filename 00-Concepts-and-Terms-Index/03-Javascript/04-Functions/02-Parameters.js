@@ -85,3 +85,29 @@ parameterTest();
 */
 // parameterTest(null, true, undefined);
 
+
+
+
+// What was went over in June 4th, 2022
+function createTask(input) {
+  const test = [
+    { task: "clean" },
+    { task: "eat" },
+    { task: "work" },
+    { task: "workout" },
+    { task: "shower" },
+    { task: "bath" },
+  ];
+
+  if (input === "thao") {
+    for (let i = 0; i < test.length; i++) {
+      checkTask(test[i].task);
+    }
+  }
+}
+
+function checkTask(tasksToDo) {
+  console.log(tasksToDo);
+}
+
+createTask("thao");

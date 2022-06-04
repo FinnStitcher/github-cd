@@ -73,4 +73,16 @@ function randomPassword(x,passLength) {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+// generateBtn.addEventListener("click", writePassword);
+
+generateBtn.addEventListener("click", test)
+
+function test(event) {
+  console.log(event)
+  console.log(event.target.classList[1]);
+
+  if(event.target.classList[1] === "incorrect") {
+
+  } else {
+
+  }}
