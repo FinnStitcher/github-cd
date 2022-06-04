@@ -61,6 +61,7 @@ let operation = "";
     ---------------------------------------------
     - Add a Click event listener on the calculator and do something when clicked
 */
+// updateDisplay();
 
 calculator.addEventListener("click", function (event) {
   /*  If the thing clicked is not a button, return. Meaning stop all code here and 
@@ -69,11 +70,11 @@ calculator.addEventListener("click", function (event) {
         I don't use the curly braces here and it still works because the code I'm only
         executing one specific action after this if-statment declaration
     */
-
-  if (event.target.classList[0] !== "btn") return;
-
-  // If we Actually clicked on a btn, then make a variable and set it's value to being the value of the btn's number
-  const btnVal = event.target.textContent;
+   
+   if (event.target.classList[0] !== "btn") return;
+   
+   // If we Actually clicked on a btn, then make a variable and set it's value to being the value of the btn's number
+   const btnVal = event.target.textContent;
 
   /* This long if-statement is set in this way for a reason
      The reason being that you always want to do your last edge cases first
