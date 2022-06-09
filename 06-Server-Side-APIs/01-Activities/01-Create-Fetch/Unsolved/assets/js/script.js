@@ -5,13 +5,14 @@ var fetchButton = document.getElementById('fetch-button');
 
 function getApi() {
   // TODO: Insert the API url to get a list of your repos
-  var requestUrl = '';
+  var requestUrl = 'https://api.github.com/users/JunoNguyen/repos';
 
   fetch(requestUrl)
     .then(function(response) {
       return response.json();
     })
     .then(function(data) {
+      console.log(data);
       // Looping over the fetch response and inserting the URL of your repos into a list
       for (var i = 0; i < data.length; i++) {
         // Create a list element
