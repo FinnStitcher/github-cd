@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+}
+
+.bigSection {
+    width: 60vw;
+}

@@ -28,7 +28,7 @@ body {
   padding: 2rem;
   /* vw = view width. I'm setting the width to be 30% of the view width */
   /* Doing a regular 30% has a higher probablity to have different results on different machines */
-  width: 30vw;
+  width: 50vw;
 }
 
 #display {
@@ -76,8 +76,8 @@ body {
 /* Styles for all the buttons */
 
 .btn {
-  padding: 1rem 1.5rem;
-  font-size: 2rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 1rem;
   border: solid 2px black;
