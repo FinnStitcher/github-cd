@@ -1,14 +1,9 @@
 var letters = "abcdefghijklmnopqrstuvwyxz";
-
 var numbers = "1234567890";
-
 var specialChars = "!@#$%^&*()_+?><,./:;'{}[]|";
-
 // toUpperCase is a built in JavaScript function that will take our letters variable and make it all uppercase
 var uppercase = letters.toUpperCase();
-
 var password2 = [];
-
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -73,16 +68,5 @@ function randomPassword(x,passLength) {
 }
 
 // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword);
 
-generateBtn.addEventListener("click", test)
-
-function test(event) {
-  console.log(event)
-  console.log(event.target.classList[1]);
-
-  if(event.target.classList[1] === "incorrect") {
-
-  } else {
-
-  }}
