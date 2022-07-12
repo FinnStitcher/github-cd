@@ -1,6 +1,7 @@
 function Algo() {}
 
-Algo.prototype.reverse = function(str) {};
+Algo.prototype.reverse = function(str) {
+};
 
 Algo.prototype.isPalindrome = function(str) {};
 
