@@ -38,3 +38,11 @@ THEN this is added to the section of the HTML entitled "Contact Me"
 What are some concepts and skills we can use in order to create a dynamic HTML layout?
 What skill can we use in order to create files?
 ```
+## Helpful Links
+
+
+[FS Syntax](https://www.geeksforgeeks.org/node-js-fs-writefile-method/)
+</br>
+[Inquirer GitHub Repo](https://github.com/SBoudrias/Inquirer.js#examples)
+</br>
+[Inquirer Docs Guide](http://adilapapaya.com/docs/inquirer/#listtypequotlistquot)
