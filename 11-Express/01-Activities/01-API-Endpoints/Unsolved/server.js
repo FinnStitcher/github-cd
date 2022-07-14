@@ -1,4 +1,7 @@
 // TODO: Import express
+const express = require('express');
+const db = require('./terms.json');
+const app = express();
 
 // TODO: Import 'terms.json' file
 const PORT = 3001;
@@ -13,6 +16,9 @@ app.get('/html', (req, res) => {
 });
 
 // TODO: Create a route for a GET request that will return the content of our `termData.json` file
+app.get('/api/', (req, res) => {
+  res.json(db)
+});
 
 app.listen(PORT, () =>
   console.log(`Example app listening at http://localhost:${PORT}`)

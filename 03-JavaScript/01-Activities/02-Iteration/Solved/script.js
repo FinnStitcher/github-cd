@@ -3,6 +3,7 @@ var students = ['Sarah', 'Orlando', 'Heather', 'Ismael', 'Hung'];
 
 // Logs length of the array
 console.log(students.length);
+console.log(typeof(students));
 
 // For loop starts at 0, runs while i is less than length of student array
 // Increments by 1
