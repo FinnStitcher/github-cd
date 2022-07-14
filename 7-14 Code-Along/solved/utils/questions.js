@@ -2,17 +2,30 @@ var questions = [
     {
         type: 'input',
         name: 'name',
-        message: 'What is your name?'
+        message: 'What is your name?',
+        validate: (answer) => {
+            if (answer !== "") {
+                return true;
+            }
+            return 'Please type in atleast one letter!';
+        }
     },
     {
         type: 'input',
         name: 'github',
-        message: 'What is your GitHub username?'
+        message: 'What is your GitHub username?',
     },
     {
         type: 'input',
         name: 'email',
-        message: 'What is your email?'
+        message: 'What is your email?',
+        validate: (answer) => {
+            const pass = answer.match(/\S+@\S+\.\S+/);
+            if(pass) {
+                return true;
+            }
+            return "Please enter a valid email address!";
+        }
     },
     {
         type: 'checkbox',
