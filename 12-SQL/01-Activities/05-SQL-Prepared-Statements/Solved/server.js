@@ -15,17 +15,17 @@ const db = mysql.createConnection(
     host: 'localhost',
     // MySQL username,
     user: 'root',
-    // MySQL password
-    password: '',
+    // {TODO: Add your MySQL password}
+    password: 'root',
     database: 'inventory_db'
   },
   console.log(`Connected to the inventory_db database.`)
 );
 
 // Query database
-let deletedRow = 2;
+let deletedRow = 3;
 
-db.query(`DELETE FROM books WHERE id = ?` (err, result) => {
+db.query(`DELETE FROM books WHERE id = ?`, deletedRow, (err, result) => {
   if (err) {
     console.log(err);
   }
@@ -41,4 +41,3 @@ db.query('SELECT * FROM books', function (err, results) {
 app.use((req, res) => {
   res.status(404).end();
 });
-
