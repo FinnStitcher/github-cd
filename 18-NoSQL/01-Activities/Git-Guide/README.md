@@ -2,11 +2,11 @@
 
 Now that you have some serious web development skills under your belt, you might find yourself wanting to publish your own packages. GitHub has a great way to publish your own packages with relative ease.
 
-Many times in this course you have installed packages using `npm install`, but now we will explore the other side of that equation. Today we will be writing and publishing an small package to GitHub's Package registry. This is a great way to share your code with other developers and also learn how a package registry works.
+Many times in this course you have installed packages using `npm install`, but now we will explore the other side of that equation. Today we will be writing and publishing a small package to GitHub's Package registry. This is a great way to share your code with other developers and also learn how a package registry works.
 
 We will go through these steps together, but to be sure we have the right resources at our disposal, be sure to visit the link below to use as a reference throughout this guide.
 
-* To get started visit the GitHub Packages guide on [Configuring npm for use with GitHub Packages](https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages).
+* To get started, visit the GitHub Packages guide on [Configuring npm for use with GitHub Packages](https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages).
 
 ## Create an Access Token
 
@@ -22,15 +22,15 @@ In order to publish packages to GitHub Packages, we will first need to authentic
 
 ## Add Access Token to `.npmrc`
 
-Now that we have our personal access token, lets add it to our user-specific `npm` configuration file.
+Now that we have our personal access token, let’s add it to our user-specific `npm` configuration file.
 
-1. In your terminal window, run the following command to edit or create `.npmrc` at the user directory. Be sure to replace TOKEN with your personal access token that we copied earlier.
+1. In your terminal window, run the following command to edit or create `.npmrc` at the `user` directory. Be sure to replace TOKEN with your personal access token that we copied earlier.
 
     ```sh
     echo "//npm.pkg.github.com/:_authToken=TOKEN" > ~/.npmrc
     ```
 
-2. To ensure it was created properly run the following command. The content of the `.npmrc` file should be output to the terminal.
+2. To ensure it was created properly, run the following command. The content of the `.npmrc` file should be output to the terminal.
 
     ```sh
     cat ~/.npmrc
@@ -40,11 +40,11 @@ Now that we have our personal access token, lets add it to our user-specific `np
 
 Now it's time to actually create a simple package that we can upload to GitHub Packages. Since we are just learning how to publish, let's create something very simple.
 
-1. Create a new directory called `github-pkg-demo` and initialize it as a git repository by running `git init`
+1. Create a new directory called `github-pkg-demo` and initialize it as a git repository by running `git init`.
 
-2. Next, create a `package.json` file by running `npm init -y`
+2. Next, create a `package.json` file by running `npm init -y`.
 
-3. Open `package.json` and modify the `name` field such that your project name includes your GitHub username. For example, if my username was `TestUser22` and the package name was `github-pkg-demo`, then I should have this in my `package.json`. Also we will want to add a repository entry that includes a `url` set to the value of what will be our remote.
+3. Open `package.json` and modify the `name` field such that your project name includes your GitHub username. For example, if my username was `TestUser22` and the package name was `github-pkg-demo`, then I should have the following in my `package.json`. Also you will want to add a repository entry that includes a `url` set to the value of what will be your remote.
 
     ```json
     }
@@ -63,7 +63,7 @@ Now it's time to actually create a simple package that we can upload to GitHub P
 
     * ⚠️ Remember, while this file is titled `.npmrc`, we are pointing to GitHub's package registry and not the default `npm` registry. As a result, our package will get published to GitHub, and not to `npm`.
 
-5. Create a `index.js` file at the root of your repository that contains the following content:
+5. Create an `index.js` file at the root of your repository that contains the following content:
 
     ```js
     module.exports = () =>
@@ -79,7 +79,7 @@ Now it's time to actually create a simple package that we can upload to GitHub P
 
 7. Navigate to your personal GitHub profile and create a new repository called "github-pkg-demo". Make sure to not initialize with a `README.md` or `.gitignore`.
 
-8. Add the remote URL given from your newly created repository on github to your local repository.
+8. Add the remote URL given from your newly created repository on GitHub to your local repository.
 
     ```sh
     git remote add origin git@github.com:GITHUB_USERNAME/github-pkg-demo.git
@@ -95,7 +95,7 @@ Now it's time to actually create a simple package that we can upload to GitHub P
     npm publish
     ```
 
-* **Note**: Remember that the `npm publish` command will publish our package to GitHub packages and not the `npm` registry because of the way we've configured our `.npmrc`.
+* **Note**: Remember that the `npm publish` command will publish our package to GitHub Packages and not the `npm` registry because of the way we've configured our `.npmrc`.
 
 ## Installing GitHub Packages
 
@@ -123,10 +123,10 @@ If you want to share this package with someone, they can follow these instructio
     npm install
     ```
 
-![packages-page](./Images/02-packages-page.png)
+![packages-page.](./Images/02-packages-page.png)
 
 ## Conclusion
 
 Congratulations on publishing your first package to GitHub! Using the screenshots below, you can verify that your package was published successfully. Start by visiting your GitHub profile, and then click on "Packages" in the right-hand navigation, as shown in the following image:
 
-![packages](./Images/01-packages.png)
+![packages.](./Images/01-packages.png)
