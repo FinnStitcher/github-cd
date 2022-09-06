@@ -58,10 +58,13 @@ function passwordChoices(passLength) {
 }
 
 function randomPassword(x,passLength) {
+  console.log(x)
   // passLength is whatever number that the user has chosen for their password.
   for (var i=0; i< passLength; i++) {
     // our function will then keep looping and choosing a random character from our x string, which contains all of the user's choices.
     var makePassword = x[Math.floor(Math.random() * x.length)];
+    
+    console.log(makePassword)
     // we have to push this into password2, which is an empty array in order to save this value of makePassword.
     password2.push(makePassword);
   }
